@@ -1,0 +1,22 @@
+{
+	"name" : "nvbooster/calculator",
+	"type" : "library",
+	"description" : "Library for cost calculations in different currencies",
+	"homepage" : "https://github.com/nvbooster/calculator",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Vyacheslav Nechipurenko",
+			"email" : "nvb@aproxima.ru",
+			"homepage" : "https://github.com/nvbooster"
+		}
+	],
+	"require" : {
+		"php" : ">=5.3.3"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"nvbooster\\Calculator\\" : "src"
+		}
+	},
+	"minimum-stability" : "dev"
+}
