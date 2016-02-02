@@ -435,9 +435,9 @@ class Calculator
             if ($row->isVisible() && $row->getNote()) {
                 if (false === $index = array_search($row->getName(), $this->notesIndex)) {
                     $this->notesIndex[] = $row->getName();
-                    $note = array('index' => count($this->notesIndex), $row->getNote());
+                    $note = array('index' => count($this->notesIndex), 'note' => $row->getNote());
                 } else {
-                    $note = array('index' => $index + 1, $row->getNote());
+                    $note = array('index' => $index + 1, 'note' => $row->getNote());
                 }
             }
         } else {
