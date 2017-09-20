@@ -46,7 +46,8 @@ class CalculatorInput
         if ($options['value']) {
             $this->value = $options['value'];
         } elseif (is_array($this->values)) {
-            $this->value = array_shift(array_keys($this->values));
+            reset($this->values);
+            $this->value = key($this->values);
         }
 
         if (is_callable($options['label'])) {
