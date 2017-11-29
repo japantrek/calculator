@@ -103,6 +103,10 @@ class CalculatorInput
      */
     public function setValue($value, $base = false)
     {
+        if ($this->base) {
+            $value = floatval($value);
+        }
+
         if ($base) {
             if (!$this->base) {
                 throw new \InvalidArgumentException('This input is non money type');
